@@ -1,5 +1,7 @@
 # Evidencias
 
+Salidas reales de la ejecución: [resultados.md](resultados.md).
+
 Guardar aquí las capturas con estos nombres:
 
 1. `01-bucket.png` — bucket creado y privado
