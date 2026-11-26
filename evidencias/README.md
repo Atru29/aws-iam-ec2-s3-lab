@@ -1,13 +1,11 @@
 # Evidencias
 
-Salidas reales de la ejecución: [resultados.md](resultados.md).
+Salidas reales de `terraform apply` y de las pruebas en la EC2: [resultados.md](resultados.md).
 
-Guardar aquí las capturas con estos nombres:
+Capturas opcionales (tapar el ID de la cuenta antes de subirlas):
 
-1. `01-bucket.png` — bucket creado y privado
-2. `02-policy.png` — política `s3-bucket-access` (JSON)
-3. `03-role.png` — rol `ec2-s3-bucket-role` con la política y trusted entity EC2
+1. `01-terraform-apply.png` — `Apply complete! Resources: 10 added`
+2. `02-bucket.png` — bucket privado en la consola de S3
+3. `03-role.png` — rol con la política y trusted entity EC2
 4. `04-ec2.png` — instancia con el IAM role asociado
-5. `05-get-caller-identity.png` — rol asumido
-6. `06-s3-ls-bucket.png` — objetos del bucket
-7. `07-s3-ls-accessdenied.png` — `aws s3 ls` con AccessDenied
+5. `05-pruebas.png` — rol asumido, objetos del bucket y `AccessDenied`

@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # Ejecutar DENTRO de la EC2 (Amazon Linux 2023 ya trae la AWS CLI).
-# Uso: BUCKET=tecsup-class-arturo-20261125 bash pruebas-ec2.sh
+# Uso: BUCKET=$(terraform output -raw bucket_name) bash pruebas-ec2.sh
 set -uo pipefail
 BUCKET="${BUCKET:?Define BUCKET con el nombre de tu bucket}"
 
-echo "== 1. ¿Quién soy? Debe mostrar el rol asumido (assumed-role/ec2-s3-bucket-role/...)"
+echo "== 1. ¿Quién soy? Debe mostrar el rol asumido (assumed-role/lab-iam-s3-ec2-role/...)"
 aws sts get-caller-identity
 
 echo "== 2. Subir, listar, descargar y borrar un objeto en MI bucket (debe funcionar)"
